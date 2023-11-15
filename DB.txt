@@ -1,0 +1,32 @@
+
+ User ------------------> Todo
+   1                        m
+pri key-userId            pri key- id
+userName                  description
+Email                     userId - foreign
+Password
+
+
+create database todolist;
+use todolist;
+create table user(
+		id varchar(10) primary key,
+		username varchar(20) not null,
+		Email varchar(20) unique,
+		password varchar(10) not null
+);
+ 
+create table todo(
+		id varchar(10) primary key,
+		description varchar(50) not null,
+		userId varchar(10) not null,
+		constraint foreign key (userId) references user(id)
+				
+ );
+create table forgetpw(
+	Email varchar(20) unique,
+	Newpassword varchar(10) not null
+);
+ 
+ insert into user values ('U001','masha','masha@gmail.com','1234');
+ 

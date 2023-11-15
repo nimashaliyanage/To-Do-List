@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="545.0" prefWidth="356.0" style="-fx-background-color: C9B6A1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginPageController">
+    <children>
+      <ImageView fitHeight="546.0" fitWidth="371.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/2.png" />
+         </image>
+      </ImageView>
+        <Label alignment="CENTER" layoutX="25.0" layoutY="34.0" prefHeight="50.0" prefWidth="306.0" style="-fx-background-color: #F2EEEB;" text="Login to To-Do List">
+            <font>
+                <Font name="System Bold" size="27.0" />
+            </font>
+        </Label>
+        <Label layoutX="48.0" layoutY="132.0" prefHeight="35.0" prefWidth="160.0" text="User Name">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="48.0" layoutY="214.0" prefHeight="35.0" prefWidth="160.0" text="Password">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtUserName" layoutX="48.0" layoutY="176.0" prefHeight="26.0" prefWidth="275.0" />
+        <PasswordField fx:id="txtPassword" layoutX="48.0" layoutY="260.0" onAction="#txtPasswordOnAction" prefHeight="26.0" prefWidth="275.0" />
+        <Button layoutX="82.0" layoutY="335.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="50.0" prefWidth="174.0" style="-fx-background-color: #081826; -fx-border-color: black; -fx-cursor: hand;" text="Login" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></Button>
+        <Label alignment="CENTER" layoutX="89.0" layoutY="387.0" onMouseClicked="#lblCreateAccOnClick" prefHeight="35.0" prefWidth="160.0" style="-fx-cursor: hand;" text="Create New Account" textFill="#1b1bcf" underline="true">
+            <font>
+                <Font name="Times New Roman" size="11.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="89.0" layoutY="408.0" onMouseClicked="#lblForgetPasswordOnMouseClicked" prefHeight="35.0" prefWidth="160.0" style="-fx-cursor: hand;" text="Forget password" textFill="#050543" underline="true">
+            <font>
+                <Font name="Times New Roman" size="11.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
